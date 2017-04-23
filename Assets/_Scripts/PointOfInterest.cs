@@ -37,6 +37,12 @@ public class PointOfInterest : MonoBehaviour
         UpdateInfo();
     }
 
+    private void OnSelect()
+    {
+        locationMarker.SetActive(!locationMarker.activeInHierarchy);
+        moreInfo.SetActive(!moreInfo.activeInHierarchy);
+    }
+
     private void OnRenderObject()
     {
         UpdateInfo();

@@ -14,7 +14,7 @@ namespace Mapbox.Examples.Playground
 	using UnityEngine;
 	using UnityEngine.UI;
 
-	public class RasterTileExample : MonoBehaviour, IObserver<RasterTile>
+	public class RasterTileExample : MonoBehaviour, Mapbox.IObserver<RasterTile>
 	{
 		[SerializeField]
 		ForwardGeocodeUserInput _searchLocation;
@@ -31,13 +31,16 @@ namespace Mapbox.Examples.Playground
 		Map<RasterTile> _map;
 
 		// initialize _mapboxStyles
-		string[] _mapboxStyles = new string[]		{
+		string[] _mapboxStyles = new string[]
+		{
 			"mapbox://styles/mapbox/satellite-v9",
-			"mapbox://styles/mapbox/streets-v9",			"mapbox://styles/mapbox/dark-v9",
+			"mapbox://styles/mapbox/streets-v9",
+			"mapbox://styles/mapbox/dark-v9",
 			"mapbox://styles/mapbox/light-v9"
 		};
 
-		// start location - San Francisco		GeoCoordinate _startLoc = new GeoCoordinate(37.76480, -122.46300);
+		// start location - San Francisco
+		GeoCoordinate _startLoc = new GeoCoordinate(37.76480, -122.46300);
 
 		int _mapstyle = 0;
 
@@ -90,11 +93,13 @@ namespace Mapbox.Examples.Playground
 		/// Style dropdown updated, begin a new _map query.
 		/// </summary>
 		/// <param name="value">If set to <c>true</c> value.</param>
-		void ToggleDropdownStyles(int target)		{
+		void ToggleDropdownStyles(int target)
+		{
 			_mapstyle = target;
 			_map.MapId = _mapboxStyles[target];
 		}
-		/// <summary>
+
+		/// <summary>
 		/// Update the texture with new data.
 		/// </summary>
 		/// <param name="tile">Tile.</param>
@@ -110,5 +115,6 @@ namespace Mapbox.Examples.Playground
 			texture.LoadImage(tile.Data);
 			_imageContainer.texture = texture;
 		}
+
 	}
 }

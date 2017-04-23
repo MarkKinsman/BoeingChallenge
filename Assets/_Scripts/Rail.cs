@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 
 public enum PlayMode
 {
@@ -99,6 +101,7 @@ public class Rail : MonoBehaviour {
         return Quaternion.Lerp(q1, q2, ratio);
     }
 
+#if UNITY_EDITOR
     private void OnDrawGizmos()
     {
         for(int i= 0; i<nodes.Length - 1; i++)
@@ -107,7 +110,7 @@ public class Rail : MonoBehaviour {
             Handles.DrawLine(nodes[i].position, nodes[i + 1].position);
         }
     }
-
+#endif
     public void InvertNodes()
     {
         foreach (Transform t in nodes)

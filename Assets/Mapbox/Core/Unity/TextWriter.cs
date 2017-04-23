@@ -40,5 +40,10 @@ namespace Mapbox.Unity
             base.Write(value);
             Debug.Log(value);
         }
+
+        public override void Write(char value)
+        {
+            base.Write(value);
+        }
     }
 }

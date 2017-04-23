@@ -10,7 +10,7 @@ namespace Mapbox.Examples.Voxels
 	using Mapbox.Scripts.Utilities;
 	using System;
 
-	class VoxelTile : MonoBehaviour, IObserver<RasterTile>, IObserver<RawPngRasterTile>
+	class VoxelTile : MonoBehaviour, Mapbox.IObserver<RasterTile>, Mapbox.IObserver<RawPngRasterTile>
 	{
 		[SerializeField]
 		ForwardGeocodeUserInput _geocodeInput;

@@ -15,7 +15,7 @@ namespace Mapbox.Examples.Playground {
 	using Mapbox.Scripts.UI;
 	using Mapbox.Scripts.Utilities;
 
-	public class VectorTileExample : MonoBehaviour, IObserver<VectorTile>
+	public class VectorTileExample : MonoBehaviour, Mapbox.IObserver<VectorTile>
 	{
 		[SerializeField]
 		ForwardGeocodeUserInput _searchLocation;
