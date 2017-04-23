@@ -91,6 +91,52 @@ NavMeshSettings:
     cellSize: 0.16666667
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!21 &3160644
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Whidbey Island
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 6afa722385efbc743b4f5fb4e30dc405, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors: []
+--- !u!21 &66746122
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Space Needle
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 6fe3272f7da1fc7458d3eb6caf57ea51, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors: []
 --- !u!1001 &85322977
 Prefab:
   m_ObjectHideFlags: 0
@@ -130,6 +176,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013402879350, guid: 3eddd1c29199313478dd3f912bfab2ab, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3eddd1c29199313478dd3f912bfab2ab, type: 2}
   m_IsPrefabParent: 0
@@ -138,13 +188,13 @@ Transform:
   m_PrefabParentObject: {fileID: 4000013535415816, guid: b2db04283121ca74495c2ee000fb4243,
     type: 2}
   m_PrefabInternal: {fileID: 1148119148}
---- !u!21 &125877676
+--- !u!21 &143508807
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Greenlake
+  m_Name: Mercer Island
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -156,7 +206,7 @@ Material:
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: 8ac6e40f0502eed428ba748880b5587d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 48148d901c011824cbe550e667cf9e67, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -246,6 +296,29 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors: []
+--- !u!21 &158215220
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SeaTac Airport
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 32033562d346b9d45b5150c21273eb66, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors: []
 --- !u!1 &161710021 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1357342613315520, guid: 4fd41de487a1a3f43b23b546a6d34af1,
@@ -257,7 +330,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 161710021}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac8d5b128a1d8204fb76c86f47b75912, type: 3}
   m_Name: 
@@ -320,11 +393,29 @@ Transform:
   m_PrefabParentObject: {fileID: 4000010560871102, guid: d379ed0a5618c9f479f58bd83a2d0ad3,
     type: 2}
   m_PrefabInternal: {fileID: 424664902}
---- !u!4 &350294219 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4000010852918880, guid: d8e0d904781544134b06adf5fc1e61d6,
-    type: 2}
-  m_PrefabInternal: {fileID: 465052340}
+--- !u!21 &317661662
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Alki Lighthouse
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 063314f191b8b7f44aebab15720302b6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors: []
 --- !u!21 &403192698
 Material:
   serializedVersion: 6
@@ -403,7 +494,7 @@ Prefab:
     - target: {fileID: 224612124968582242, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 15
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 224612124968582242, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
@@ -518,12 +609,12 @@ Prefab:
     - target: {fileID: 114188527309109800, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114188527309109800, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114188527309109800, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
@@ -619,6 +710,41 @@ Prefab:
       propertyPath: poiTitle
       value: SeaTac Airport
       objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info1Title
+      value: Airport Code
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info1Desc
+      value: SEA
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info2Title
+      value: Elevation
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info2Desc
+      value: 433 Feet
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info3Title
+      value: Daily Flyers
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info3Desc
+      value: 45,736,700
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: poiImage
+      value: 
+      objectReference: {fileID: 2800000, guid: 32033562d346b9d45b5150c21273eb66, type: 3}
     m_RemovedComponents:
     - {fileID: 114421619558733962, guid: 4fd41de487a1a3f43b23b546a6d34af1, type: 2}
     - {fileID: 135484438925799468, guid: 4fd41de487a1a3f43b23b546a6d34af1, type: 2}
@@ -669,32 +795,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 20000013304850028, guid: d379ed0a5618c9f479f58bd83a2d0ad3,
+        type: 2}
+      propertyPath: far clip plane
+      value: 2000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d379ed0a5618c9f479f58bd83a2d0ad3, type: 2}
   m_IsPrefabParent: 0
---- !u!21 &438329213
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Space Needle
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  m_SavedProperties:
-    serializedVersion: 2
-    m_TexEnvs:
-    - first:
-        name: _MainTex
-      second:
-        m_Texture: {fileID: 2800000, guid: 8ac6e40f0502eed428ba748880b5587d, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors: []
 --- !u!1001 &451423935
 Prefab:
   m_ObjectHideFlags: 0
@@ -745,12 +853,12 @@ Prefab:
     - target: {fileID: 224612124968582242, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -170.5
+      value: 206.4
       objectReference: {fileID: 0}
     - target: {fileID: 224612124968582242, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 15
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 224612124968582242, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
@@ -865,12 +973,12 @@ Prefab:
     - target: {fileID: 114188527309109800, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114188527309109800, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114188527309109800, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
@@ -961,6 +1069,41 @@ Prefab:
       propertyPath: poiTitle
       value: Mercer Island
       objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info1Title
+      value: Population
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info1Desc
+      value: 22,699
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info2Title
+      value: Named After
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info2Desc
+      value: The Mercer Family
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info3Title
+      value: Peak Elevation
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info3Desc
+      value: 338 Feet
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: poiImage
+      value: 
+      objectReference: {fileID: 2800000, guid: 48148d901c011824cbe550e667cf9e67, type: 3}
     m_RemovedComponents:
     - {fileID: 114421619558733962, guid: 4fd41de487a1a3f43b23b546a6d34af1, type: 2}
     - {fileID: 135484438925799468, guid: 4fd41de487a1a3f43b23b546a6d34af1, type: 2}
@@ -1000,7 +1143,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1278896854}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4000010852918880, guid: d8e0d904781544134b06adf5fc1e61d6, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1032,7 +1175,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010852918880, guid: d8e0d904781544134b06adf5fc1e61d6, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114000011803853994, guid: d8e0d904781544134b06adf5fc1e61d6,
         type: 2}
@@ -1042,13 +1185,13 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d8e0d904781544134b06adf5fc1e61d6, type: 2}
   m_IsPrefabParent: 0
---- !u!21 &508029743
+--- !u!21 &491565334
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Mercer Island
+  m_Name: Log Boom Park
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -1060,18 +1203,18 @@ Material:
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: 8ac6e40f0502eed428ba748880b5587d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 73d21f7f4079b704088acf7d272b93f4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors: []
---- !u!21 &530331367
+--- !u!21 &558241881
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Boeing Field
+  m_Name: Vashon Island
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -1083,7 +1226,7 @@ Material:
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: 8ac6e40f0502eed428ba748880b5587d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 846c8a300a8aea845b6fe2d1dd5d10d3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -1111,52 +1254,6 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors: []
---- !u!21 &641675488
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Log Boom Park
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  m_SavedProperties:
-    serializedVersion: 2
-    m_TexEnvs:
-    - first:
-        name: _MainTex
-      second:
-        m_Texture: {fileID: 2800000, guid: 8ac6e40f0502eed428ba748880b5587d, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors: []
---- !u!21 &653026881
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Lake Youngs
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  m_SavedProperties:
-    serializedVersion: 2
-    m_TexEnvs:
-    - first:
-        name: _MainTex
-      second:
-        m_Texture: {fileID: 2800000, guid: 8ac6e40f0502eed428ba748880b5587d, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors: []
 --- !u!1 &817209544 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1357342613315520, guid: 4fd41de487a1a3f43b23b546a6d34af1,
@@ -1168,7 +1265,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 817209544}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac8d5b128a1d8204fb76c86f47b75912, type: 3}
   m_Name: 
@@ -1241,7 +1338,7 @@ Prefab:
     - target: {fileID: 224612124968582242, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224612124968582242, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
@@ -1356,12 +1453,12 @@ Prefab:
     - target: {fileID: 114188527309109800, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114188527309109800, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114188527309109800, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
@@ -1447,6 +1544,41 @@ Prefab:
       propertyPath: poiTitle
       value: Greenlake
       objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info1Title
+      value: Named In
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info1Desc
+      value: 1855
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info2Title
+      value: Maximum Depth
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info2Desc
+      value: 30 Feet
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info3Title
+      value: Formed By
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info3Desc
+      value: Vashon Glacier
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: poiImage
+      value: 
+      objectReference: {fileID: 2800000, guid: 2ee5064037586d542894f6d2e1b38035, type: 3}
     m_RemovedComponents:
     - {fileID: 114421619558733962, guid: 4fd41de487a1a3f43b23b546a6d34af1, type: 2}
     - {fileID: 135484438925799468, guid: 4fd41de487a1a3f43b23b546a6d34af1, type: 2}
@@ -1469,7 +1601,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 860751013}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac8d5b128a1d8204fb76c86f47b75912, type: 3}
   m_Name: 
@@ -1565,7 +1697,7 @@ Prefab:
     - target: {fileID: 224612124968582242, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 14
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 224612124968582242, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
@@ -1680,12 +1812,12 @@ Prefab:
     - target: {fileID: 114188527309109800, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114188527309109800, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114188527309109800, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
@@ -1715,7 +1847,7 @@ Prefab:
     - target: {fileID: 224703439719952386, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 120.42
+      value: 173.27
       objectReference: {fileID: 0}
     - target: {fileID: 224703439719952386, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
@@ -1754,7 +1886,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1357342613315520, guid: 4fd41de487a1a3f43b23b546a6d34af1, type: 2}
       propertyPath: m_Name
-      value: Alki Beach
+      value: Alki Lighthouse
       objectReference: {fileID: 0}
     - target: {fileID: 224612124968582242, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
@@ -1769,8 +1901,43 @@ Prefab:
     - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: poiTitle
-      value: Alki Beach
+      value: Alki Lighthouse
       objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info1Title
+      value: Purpose
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info1Desc
+      value: Navigational Aid
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info2Title
+      value: Elevation
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info2Desc
+      value: 37 Feet
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info3Title
+      value: Established
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info3Desc
+      value: 1870
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: poiImage
+      value: 
+      objectReference: {fileID: 2800000, guid: 063314f191b8b7f44aebab15720302b6, type: 3}
     m_RemovedComponents:
     - {fileID: 114421619558733962, guid: 4fd41de487a1a3f43b23b546a6d34af1, type: 2}
     - {fileID: 135484438925799468, guid: 4fd41de487a1a3f43b23b546a6d34af1, type: 2}
@@ -1793,7 +1960,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 913321312}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac8d5b128a1d8204fb76c86f47b75912, type: 3}
   m_Name: 
@@ -1811,6 +1978,29 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 200, y: 200, z: 1}
   m_Center: {x: 0, y: 100, z: 0}
+--- !u!21 &1003758981
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Lake Youngs
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 0c3c5535ef56eac47bef94f86cd8a64e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors: []
 --- !u!1 &1023529779 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1357342613315520, guid: 4fd41de487a1a3f43b23b546a6d34af1,
@@ -1822,7 +2012,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1023529779}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac8d5b128a1d8204fb76c86f47b75912, type: 3}
   m_Name: 
@@ -1851,7 +2041,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1061344743}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac8d5b128a1d8204fb76c86f47b75912, type: 3}
   m_Name: 
@@ -1911,29 +2101,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b2db04283121ca74495c2ee000fb4243, type: 2}
   m_IsPrefabParent: 0
---- !u!21 &1159402697
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: SeaTac Airport
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  m_SavedProperties:
-    serializedVersion: 2
-    m_TexEnvs:
-    - first:
-        name: _MainTex
-      second:
-        m_Texture: {fileID: 2800000, guid: 8ac6e40f0502eed428ba748880b5587d, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors: []
 --- !u!21 &1274669600
 Material:
   serializedVersion: 6
@@ -1979,7 +2146,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1278896852}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 18972756745dbc94488b0d2577cda4ea, type: 3}
   m_Name: 
@@ -1987,7 +2154,7 @@ MonoBehaviour:
   rail: {fileID: 1520244183}
   mode: 1
   moveWorld: 1
-  speed: 15
+  speed: 40
   isReversed: 0
   isLooping: 1
   pingPong: 1
@@ -2011,34 +2178,9 @@ Transform:
   - {fileID: 1428277475}
   - {fileID: 1879831482}
   - {fileID: 1583062841}
-  - {fileID: 350294219}
-  - {fileID: 1834434979}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1296222373
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Whidbey Island
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  m_SavedProperties:
-    serializedVersion: 2
-    m_TexEnvs:
-    - first:
-        name: _MainTex
-      second:
-        m_Texture: {fileID: 2800000, guid: 8ac6e40f0502eed428ba748880b5587d, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors: []
 --- !u!1 &1334556174 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1357342613315520, guid: 4fd41de487a1a3f43b23b546a6d34af1,
@@ -2050,7 +2192,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1334556174}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac8d5b128a1d8204fb76c86f47b75912, type: 3}
   m_Name: 
@@ -2128,7 +2270,7 @@ Prefab:
     - target: {fileID: 224612124968582242, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 15
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 224612124968582242, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
@@ -2243,12 +2385,12 @@ Prefab:
     - target: {fileID: 114188527309109800, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114188527309109800, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114188527309109800, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
@@ -2339,6 +2481,41 @@ Prefab:
       propertyPath: poiTitle
       value: Vashon Island
       objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info1Title
+      value: Population
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info1Desc
+      value: 10,624
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info2Title
+      value: Founded
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info2Desc
+      value: May 28, 1792
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info3Title
+      value: Must See
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info3Desc
+      value: '"The Hardware Store"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: poiImage
+      value: 
+      objectReference: {fileID: 2800000, guid: 846c8a300a8aea845b6fe2d1dd5d10d3, type: 3}
     m_RemovedComponents:
     - {fileID: 114421619558733962, guid: 4fd41de487a1a3f43b23b546a6d34af1, type: 2}
     - {fileID: 135484438925799468, guid: 4fd41de487a1a3f43b23b546a6d34af1, type: 2}
@@ -2373,58 +2550,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors: []
---- !u!21 &1475533311
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Vashon Island
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  m_SavedProperties:
-    serializedVersion: 2
-    m_TexEnvs:
-    - first:
-        name: _MainTex
-      second:
-        m_Texture: {fileID: 2800000, guid: 8ac6e40f0502eed428ba748880b5587d, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors: []
 --- !u!114 &1520244183 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114014919456612446, guid: e75726fd56bb421439d132a3e29aa0ce,
     type: 2}
   m_PrefabInternal: {fileID: 1744135539}
   m_Script: {fileID: 11500000, guid: e3138a20df3167d4785075080ab577cd, type: 3}
---- !u!21 &1532774600
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Alki Beach
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  m_SavedProperties:
-    serializedVersion: 2
-    m_TexEnvs:
-    - first:
-        name: _MainTex
-      second:
-        m_Texture: {fileID: 2800000, guid: 8ac6e40f0502eed428ba748880b5587d, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors: []
 --- !u!1 &1546003992 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1357342613315520, guid: 4fd41de487a1a3f43b23b546a6d34af1,
@@ -2436,7 +2567,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1546003992}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac8d5b128a1d8204fb76c86f47b75912, type: 3}
   m_Name: 
@@ -2555,7 +2686,7 @@ Prefab:
     - target: {fileID: 224612124968582242, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 14
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 224612124968582242, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
@@ -2670,12 +2801,12 @@ Prefab:
     - target: {fileID: 114188527309109800, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114188527309109800, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114188527309109800, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
@@ -2744,7 +2875,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1357342613315520, guid: 4fd41de487a1a3f43b23b546a6d34af1, type: 2}
       propertyPath: m_Name
-      value: Whidbey
+      value: Whidbey Island
       objectReference: {fileID: 0}
     - target: {fileID: 224612124968582242, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
@@ -2761,6 +2892,41 @@ Prefab:
       propertyPath: poiTitle
       value: Whidbey Island
       objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info1Title
+      value: Population
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info1Desc
+      value: 58,211
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info2Title
+      value: Tidbit
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info2Desc
+      value: 40th largest on US
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info3Title
+      value: Found in
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info3Desc
+      value: 1792
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: poiImage
+      value: 
+      objectReference: {fileID: 2800000, guid: 6afa722385efbc743b4f5fb4e30dc405, type: 3}
     m_RemovedComponents:
     - {fileID: 114421619558733962, guid: 4fd41de487a1a3f43b23b546a6d34af1, type: 2}
     - {fileID: 135484438925799468, guid: 4fd41de487a1a3f43b23b546a6d34af1, type: 2}
@@ -2788,7 +2954,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1620308993}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac8d5b128a1d8204fb76c86f47b75912, type: 3}
   m_Name: 
@@ -2817,7 +2983,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1689640344}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac8d5b128a1d8204fb76c86f47b75912, type: 3}
   m_Name: 
@@ -2901,7 +3067,7 @@ Prefab:
     - target: {fileID: 224612124968582242, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_LocalPosition.z
-      value: -952
+      value: -1029.9
       objectReference: {fileID: 0}
     - target: {fileID: 224612124968582242, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
@@ -2931,12 +3097,12 @@ Prefab:
     - target: {fileID: 224612124968582242, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 100
+      value: 4.53
       objectReference: {fileID: 0}
     - target: {fileID: 224612124968582242, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224612124968582242, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
@@ -3051,12 +3217,12 @@ Prefab:
     - target: {fileID: 114188527309109800, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114188527309109800, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114188527309109800, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
@@ -3142,6 +3308,41 @@ Prefab:
       propertyPath: poiTitle
       value: Log Boom Park
       objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info1Title
+      value: Description
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info1Desc
+      value: Lakefront Park
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info2Title
+      value: Elevation
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info2Desc
+      value: 3 Feet
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info3Title
+      value: Popular For
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info3Desc
+      value: Paddle & Kayak Rental
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: poiImage
+      value: 
+      objectReference: {fileID: 2800000, guid: 73d21f7f4079b704088acf7d272b93f4, type: 3}
     m_RemovedComponents:
     - {fileID: 114421619558733962, guid: 4fd41de487a1a3f43b23b546a6d34af1, type: 2}
     - {fileID: 135484438925799468, guid: 4fd41de487a1a3f43b23b546a6d34af1, type: 2}
@@ -3183,6 +3384,7 @@ MonoBehaviour:
   MapVisualization: {fileID: 11400000, guid: c5c72886d2e9404439c5411592dbdc8f, type: 2}
   TileSize: 100
   _snapYToZero: 1
+  parentObject: {fileID: 1278896854}
   LatLng: 47.907654, -122.277489
   Zoom: 14
   Range: {x: 18, y: 15, z: 12, w: 50}
@@ -3196,8 +3398,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1278896854}
-  m_RootOrder: 11
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1848483728
 Prefab:
@@ -3254,7 +3456,7 @@ Prefab:
     - target: {fileID: 224612124968582242, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 20
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 224612124968582242, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
@@ -3404,7 +3606,7 @@ Prefab:
     - target: {fileID: 224703439719952386, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 141.85
+      value: 127.56
       objectReference: {fileID: 0}
     - target: {fileID: 224703439719952386, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
@@ -3444,7 +3646,7 @@ Prefab:
     - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: poiTitle
-      value: Boeing Field
+      value: Paine Field
       objectReference: {fileID: 0}
     - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
@@ -3546,7 +3748,7 @@ Prefab:
     - target: {fileID: 224612124968582242, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224612124968582242, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
@@ -3661,12 +3863,12 @@ Prefab:
     - target: {fileID: 114188527309109800, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114188527309109800, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114188527309109800, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
@@ -3761,6 +3963,41 @@ Prefab:
         type: 2}
       propertyPath: poiTitle
       value: Space Needle
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: poiImage
+      value: 
+      objectReference: {fileID: 2800000, guid: 6fe3272f7da1fc7458d3eb6caf57ea51, type: 3}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info1Title
+      value: Height
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info1Desc
+      value: 605 Feet
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info2Title
+      value: Built in
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info2Desc
+      value: 1962
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info3Title
+      value: Hours
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info3Desc
+      value: 9:00AM-9:30PM
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114421619558733962, guid: 4fd41de487a1a3f43b23b546a6d34af1, type: 2}
@@ -3882,7 +4119,7 @@ Prefab:
     - target: {fileID: 224612124968582242, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 18
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 224612124968582242, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
@@ -3997,12 +4234,12 @@ Prefab:
     - target: {fileID: 114188527309109800, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114188527309109800, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114188527309109800, guid: 4fd41de487a1a3f43b23b546a6d34af1,
         type: 2}
@@ -4098,6 +4335,41 @@ Prefab:
       propertyPath: poiTitle
       value: Lake Youngs
       objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info1Title
+      value: Excellent for
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info1Desc
+      value: Hiking and Picnics
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info2Title
+      value: Elevation
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info2Desc
+      value: 1000 Feet
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info3Title
+      value: Entrance Fee
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: info3Desc
+      value: $10/Day
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288246510630686, guid: 4fd41de487a1a3f43b23b546a6d34af1,
+        type: 2}
+      propertyPath: poiImage
+      value: 
+      objectReference: {fileID: 2800000, guid: 0c3c5535ef56eac47bef94f86cd8a64e, type: 3}
     m_RemovedComponents:
     - {fileID: 114421619558733962, guid: 4fd41de487a1a3f43b23b546a6d34af1, type: 2}
     - {fileID: 135484438925799468, guid: 4fd41de487a1a3f43b23b546a6d34af1, type: 2}
@@ -4109,6 +4381,52 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224612124968582242, guid: 4fd41de487a1a3f43b23b546a6d34af1,
     type: 2}
   m_PrefabInternal: {fileID: 1879831481}
+--- !u!21 &1992725168
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Paine Field
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 8ac6e40f0502eed428ba748880b5587d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors: []
+--- !u!21 &2064508109
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Greenlake
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 2ee5064037586d542894f6d2e1b38035, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors: []
 --- !u!1 &2131760262
 GameObject:
   m_ObjectHideFlags: 0

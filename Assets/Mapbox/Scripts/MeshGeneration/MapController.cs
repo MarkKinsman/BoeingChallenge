@@ -17,6 +17,8 @@ namespace Mapbox.MeshGeneration
 
         [SerializeField]
         private bool _snapYToZero = true;
+        [SerializeField]
+        private Transform parentObject;
 
 		[Geocode]
 		public string LatLng;
@@ -70,6 +72,7 @@ namespace Mapbox.MeshGeneration
 			}
 
 			_root = new GameObject("worldRoot");
+            _root.transform.SetParent(parentObject);
 
 			var v2 = Conversions.LatLonToMeters(lat, lng);
 			var tms = Conversions.MetersToTile(v2, zoom);
